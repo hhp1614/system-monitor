@@ -3,8 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+      const log = console.log.bind(console, '%c[log]', 'color: #ff1d25;');
+    </script>
   </head>
   <body>
-    Well hey there!!!
+    <div id="drag-block">
+      <button>完成</button>
+    </div>
+    <div id="root">
+      <div class="neon">
+        <div class="uptime"></div>
+        <div class="hostname"></div>
+        <div class="mem"></div>
+        <div class="cpu"></div>
+      </div>
+    </div>
+
+    <script src="./render/content.js"></script>
+    <script src="./render/menu.js"></script>
   </body>
 </html>

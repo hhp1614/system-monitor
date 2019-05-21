@@ -1,0 +1,105 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  user-select: none;
+}
+
+#drag-block {
+  -webkit-app-region: drag;
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+}
+#drag-block button {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  overflow: hidden;
+  color: #fff;
+  line-height: 2em;
+}
+
+
+.neon {
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  text-shadow:
+    0 0 10px rgba(255, 0, 0, 0.8),
+    0 0 20px rgba(255, 0, 0, 0.6),
+    0 0 30px rgba(255, 0, 0, 0.4),
+    0 0 40px rgba(255, 0, 0, 0.2);
+  animation: texAni 15s ease-in-out infinite;
+}
+@keyframes texAni {
+  0% {
+    color: rgb(255, 0, 0);
+    text-shadow:
+      0 0 10px rgba(255, 0, 0, 0.8),
+      0 0 20px rgba(255, 0, 0, 0.6),
+      0 0 30px rgba(255, 0, 0, 0.4),
+      0 0 40px rgba(255, 0, 0, 0.2);
+  }
+  16% {
+    color: rgb(0, 255, 0);
+    text-shadow:
+      0 0 10px rgba(0, 255, 0, 0.8),
+      0 0 20px rgba(0, 255, 0, 0.6),
+      0 0 30px rgba(0, 255, 0, 0.4),
+      0 0 40px rgba(0, 255, 0, 0.2);
+  }
+  32% {
+    color: rgb(0, 0, 255);
+    text-shadow:
+      0 0 10px rgba(0, 0, 255, 0.8),
+      0 0 20px rgba(0, 0, 255, 0.6),
+      0 0 30px rgba(0, 0, 255, 0.4),
+      0 0 40px rgba(0, 0, 255, 0.2);
+  }
+  48% {
+    color: rgb(255, 255, 0);
+    text-shadow:
+      0 0 10px rgba(255, 255, 0, 0.8),
+      0 0 20px rgba(255, 255, 0, 0.6),
+      0 0 30px rgba(255, 255, 0, 0.4),
+      0 0 40px rgba(255, 255, 0, 0.2);
+  }
+  64% {
+    color: rgb(0, 255, 255);
+    text-shadow:
+      0 0 10px rgba(0, 255, 255, 0.8),
+      0 0 20px rgba(0, 255, 255, 0.6),
+      0 0 30px rgba(0, 255, 255, 0.4),
+      0 0 40px rgba(0, 255, 255, 0.2);
+  }
+  80% {
+    color: rgb(255, 0, 255);
+    text-shadow:
+      0 0 10px rgba(255, 0, 255, 0.8),
+      0 0 20px rgba(255, 0, 255, 0.6),
+      0 0 30px rgba(255, 0, 255, 0.4),
+      0 0 40px rgba(255, 0, 255, 0.2);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+    text-shadow:
+      0 0 10px rgba(255, 0, 0, 0.8),
+      0 0 20px rgba(255, 0, 0, 0.6),
+      0 0 30px rgba(255, 0, 0, 0.4),
+      0 0 40px rgba(255, 0, 0, 0.2);
+  }
+}
